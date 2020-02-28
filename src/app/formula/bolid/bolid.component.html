@@ -1,1 +1,7 @@
-<p>bolid works!</p>
+<h4>{{bolid.modelName}}</h4>
+<div class="images">
+  <img [src]="bolid.imageUrl"/>
+</div>
+<div class="range" [title]="'Range ' + bolid.range + '%'">
+  <div [style.width.%]="bolid.range"></div>
+</div>

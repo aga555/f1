@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-bolid',
@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bolid.component.css']
 })
 export class BolidComponent implements OnInit {
+
+ bolid = {
+   modelName: 'Redbull',
+   imageUrl: '/assets/redBull.png',
+   range: 80,
+ };
 
   constructor() { }
 
