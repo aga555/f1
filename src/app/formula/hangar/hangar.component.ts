@@ -1,4 +1,7 @@
 import {Component, OnInit} from '@angular/core';
+import {Bolid} from '../bolid';
+import {RedBull} from '../red-bull';
+import {MercedesBenz} from '../mercedes-benz';
 
 @Component({
   selector: 'app-hangar',
@@ -7,9 +10,12 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HangarComponent implements OnInit {
 
+  bolids: Bolid[] = [];
   constructor() { }
 
   ngOnInit() {
+    this.bolids.push(new RedBull());
+    this.bolids.push(new MercedesBenz());
   }
 
 }

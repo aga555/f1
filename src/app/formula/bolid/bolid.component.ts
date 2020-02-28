@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Bolid} from '../bolid';
 
 @Component({
   selector: 'app-bolid',
@@ -7,11 +8,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class BolidComponent implements OnInit {
 
- bolid = {
-   modelName: 'Redbull',
-   imageUrl: '/assets/redBull.png',
-   range: 80,
- };
+  @Input() bolid: Bolid;
 
   constructor() { }
 
