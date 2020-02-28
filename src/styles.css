@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  color: white;
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Alfa+Slab+One&display=swap');
+  font-family: 'Alfa Slab One',sans-serif ;
+
+  width: 1280px;
+  height: 720px;
+  background: url('/assets/f1black.png') no-repeat center top;
+  background-size: 100% auto;
+}
+footer{
+  font-family: 'Advent Pro', sans-serif ;
+}
+
